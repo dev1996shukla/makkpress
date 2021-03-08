@@ -1,0 +1,222 @@
+ /* Eric Meyer's Reset */
+ 
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;	
+	border-spacing: 0;
+}
+
+
+/*
+ Global Typography
+ ----------------------------------------*/
+ *, :before, :after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	outline: none;
+}
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size:10px;
+}
+body {
+	line-height: 1.1;
+	color: #fff;
+	font-family: 'Nunito', sans-serif;
+	background: #fff;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+  	 display: inline-block;
+}
+* html .clearfix {
+ height: 1%; }
+.clearfix { 
+ 	display: block;
+}
+input,select,textarea{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius:0;
+}
+input {
+	line-height: normal;
+}
+input:focus, select:focus, button:focus {
+	border:none;
+	outline: 0;
+}
+
+a:link, a:visited , a:hover{	
+    text-decoration: none;
+    -webkit-transition: color 200ms ease;
+    transition: color 200ms ease;
+    color: #000;
+	font-family: 'Nunito', sans-serif;
+}
+button{
+	min-width:246px;
+	min-height:57px;
+	background: #c89f43;
+	color:#fff;
+	outline: none;
+	border: none;
+	border:1px solid transparent;
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
+	text-transform: uppercase;
+}
+button:hover{
+	color: #c89f43;
+	border:1px solid #c89f43;
+	background: none;
+}
+a{
+	display: inline-block;
+}
+h1,h2,h3,h4,h5{
+	color: #c89f43;
+	font-size:30px;
+	text-align:center;
+	text-transform: uppercase;
+	margin-bottom:35px;
+}
+h3,h4,h5{
+	font-size:20px;
+
+}
+span{
+	display: block;
+	color:#000;
+	font-size:16px;
+}
+p{
+	color: #0b0c11;
+	line-height: 1.5;
+	font-size:18px;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+}
+picture{
+	display: block;
+}
+.container-fluid{
+	width: 100%;
+	padding: 0 15px;
+}
+section{
+	padding:73px 0 76px;
+}
+.container{
+	max-width: 1334px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+/*-- header start --*/
+
+	.header {
+		padding: 21px 0 20px;
+	}
+.hamburger{
+	display: none;
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar ul{
+	display: flex;
+	align-items: center;
+}
+.navbar ul li{
+	margin:0 35px 0 0 ;
+}
+.navbar ul li:last-child{
+	margin-right: 0;
+}
+.navbar ul li a{
+	font-size: 10px;
+	font-weight: 500;
+	color: #c89f43;
+	padding:4px 0px;
+	position: relative;
+	transition: all 0.5s ease-in-out;
+}
+.navbar ul li button{
+	font-size: 12.22px;
+	font-weight: 500;
+	color: #c89f43;
+	background: transparent;
+	min-height: initial;
+	min-width:initial;
+	border:2px solid #c89f43 ;
+	padding:4px 29px;
+	text-transform: uppercase;
+}
+.navbar ul li button:hover{
+	background: #c89f43;
+	color: #fff;
+	border:2px solid transparent
+}
+.navbar ul li a:after{
+	content: "";
+	position: absolute;
+	width: 0;
+	bottom: 2px;
+	left:0;
+	background-color: #c89f43;
+	height: 2px;
+	transition: all 0.3s ease-in-out;
+}
+.navbar ul li a:hover:after{
+	width: 100%;
+}
+.logo{
+	display: block;
+}
+
+/*-- header end --*/
+footer{
+	padding:80px 0 89px;
+	border-top:2px solid #e3e3e3;
+}
